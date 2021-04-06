@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="DlBmEh" name="Audio Steganography" projectType="guiapp" useAppConfig="0"
+              displaySplashScreen="1" jucerFormatVersion="1">
+  <MAINGROUP id="IwFLUn" name="Audio Steganography">
+    <GROUP id="{BA354394-CDB7-59D4-55EB-08F2FF7204D2}" name="Source">
+      <FILE id="kAvay4" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="TM0BcT" name="Codec.cpp" compile="1" resource="0" file="Source/Codec.cpp"/>
+      <FILE id="YypQcq" name="Codec.h" compile="0" resource="0" file="Source/Codec.h"/>
+      <FILE id="AzbuLR" name="AudioBufferPlayer.cpp" compile="1" resource="0"
+            file="Source/AudioBufferPlayer.cpp"/>
+      <FILE id="z2cdZg" name="AudioBufferPlayer.h" compile="0" resource="0"
+            file="Source/AudioBufferPlayer.h"/>
+      <GROUP id="{BB61135A-2C7E-C3F0-DE4D-5881317B0E95}" name="GUI">
+        <FILE id="YzdbSZ" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+        <FILE id="H8bYa1" name="MainComponent.cpp" compile="1" resource="0"
+              file="Source/MainComponent.cpp"/>
+        <FILE id="qkrkkl" name="GUI_Codec.cpp" compile="1" resource="0" file="Source/GUI_Codec.cpp"/>
+        <FILE id="of2H6n" name="GUI_Codec.h" compile="0" resource="0" file="Source/GUI_Codec.h"/>
+        <FILE id="dPFa9z" name="GUI_AudioBufferPlayer.cpp" compile="1" resource="0"
+              file="Source/GUI_AudioBufferPlayer.cpp"/>
+        <FILE id="YJNPZX" name="GUI_AudioBufferPlayer.h" compile="0" resource="0"
+              file="Source/GUI_AudioBufferPlayer.h"/>
+      </GROUP>
+      <GROUP id="{E7F5BF9B-61C9-1F15-E280-A815DC055DD5}" name="Encrypt">
+        <FILE id="sPGD6e" name="Cypher.h" compile="0" resource="0" file="Source/Cypher.h"/>
+        <FILE id="G1njAP" name="Cypher_LetterSub.cpp" compile="1" resource="0"
+              file="Source/Cypher_LetterSub.cpp"/>
+        <FILE id="Yq3Rjc" name="Cypher_LetterSub.h" compile="0" resource="0"
+              file="Source/Cypher_LetterSub.h"/>
+        <FILE id="Wn020L" name="Cypher_None.cpp" compile="1" resource="0" file="Source/Cypher_None.cpp"/>
+        <FILE id="V9K4hF" name="Cypher_None.h" compile="0" resource="0" file="Source/Cypher_None.h"/>
+        <FILE id="d811cw" name="Cypher_ReverseString.cpp" compile="1" resource="0"
+              file="Source/Cypher_ReverseString.cpp"/>
+        <FILE id="SyChPB" name="Cypher_ReverseString.h" compile="0" resource="0"
+              file="Source/Cypher_ReverseString.h"/>
+      </GROUP>
+    </GROUP>
+    <FILE id="ZibDRq" name="lockingAudioSampleBuffer.cpp" compile="1" resource="0"
+          file="Source/lockingAudioSampleBuffer.cpp"/>
+    <FILE id="S6gUeV" name="lockingAudioSampleBuffer.h" compile="0" resource="0"
+          file="Source/lockingAudioSampleBuffer.h"/>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <VS2019 targetFolder="Builds/VisualStudio2019">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="Audio Steganography"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Audio Steganography"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2019>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <WINDOWS/>
+  </LIVE_SETTINGS>
+</JUCERPROJECT>
